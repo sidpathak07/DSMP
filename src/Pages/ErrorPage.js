@@ -5,11 +5,13 @@ function ErrorPage() {
   return (
     <div>
       <Base>
-        <h1 className="text-center">Error 404</h1>
-        <h1 className="text-center">Page Not Found</h1>
-        <Link to="/" className="btn btn-md btn-dark my-3">
-          Go Back To Home
-        </Link>
+        <div className="text-center mt-5">
+          <h1 className="text-center">Error 404</h1>
+          <h1 className="text-center">Page Not Found</h1>
+          <Link to="/" className="btn btn-md btn-dark my-3">
+            Go Back To Home
+          </Link>
+        </div>
       </Base>
     </div>
   );
