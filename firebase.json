@@ -43,7 +43,7 @@
       {
         "source":"/login",
         "destination":"/admin",
-        "type":200
+        "type":302
       }
     ]
   }

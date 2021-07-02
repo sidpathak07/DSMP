@@ -40,7 +40,6 @@ const Routes = () => {
               admin: true,
             });
             authenticacte({ email: user.email, uid: user.uid, admin: true });
-            <Redirect to="/admin" />;
           } else {
             // console.log("IS NOT ADMIN");
             setUserDetails({
@@ -49,7 +48,6 @@ const Routes = () => {
               admin: false,
             });
             authenticacte({ email: user.email, uid: user.uid, admin: false });
-            <Redirect to="/profile" />;
           }
         });
       } else {

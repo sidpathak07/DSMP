@@ -10,9 +10,9 @@ import { firebaseConfig } from "./Config/firebaseConfig";
 import firebase from "firebase/app";
 firebase.initializeApp(firebaseConfig);
 function App() {
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-  });
+  // document.addEventListener("contextmenu", (e) => {
+  //   e.preventDefault();
+  // });
 
   return (
     <UserProvider>
