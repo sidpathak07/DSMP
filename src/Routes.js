@@ -31,6 +31,7 @@ import ProfileSubCollection from "./private/ProfileSubCollection";
 import ManageCollections from "./admin/ManageCollections";
 import UpdateCollection from "./admin/UpdateCollection";
 import { authenticacte, isAuthenticated } from "./auth";
+import ErrorPage from "./Pages/ErrorPage";
 const Routes = () => {
   const { userDetails, setUserDetails } = useContext(UserContext);
   // console.log(userDetails.email ? userDetails.email : "no details");
@@ -79,6 +80,7 @@ const Routes = () => {
         <Route path="/contactus" exact component={ContactUs} />
         <Route path="/login" exact component={Login} />
         <Route path="/collection/:id" exact component={SubCollectionCard} />
+        <Route component={ErrorPage} />
         <AdminRoute path="/admin" exact component={AdminPanel} />
         <AdminRoute path="/admin/create/user" exact component={CreateUser} />
         <AdminRoute path="/admin/enquiries" exact component={Enquiry} />
