@@ -67,6 +67,7 @@ const Login = () => {
                   uid: user.user.uid,
                   admin: true,
                 });
+                // history.push("/admin");
                 setIsLoading(false);
                 setTimeout(() => {
                   history.push("/admin");
@@ -78,6 +79,7 @@ const Login = () => {
                   uid: user.user.uid,
                   admin: false,
                 });
+                // history.push("/profile");
                 setIsLoading(false);
                 setTimeout(() => {
                   history.push("/profile");

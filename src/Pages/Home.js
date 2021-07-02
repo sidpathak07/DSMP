@@ -14,9 +14,6 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-      {/* <video width="100%" height="590" autoPlay="true" muted="true" loop="true">
-        <source src={video} type="video/mp4" />
-      </video> */}
       <div>
         <Carousel fade={true} controls={false}>
           <Carousel.Item interval={4000}>
@@ -69,12 +66,6 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      {
-        <>
-          <h1>{userDetails.email}</h1>
-          <h1>{userDetails.admin}</h1>
-        </>
-      }
     </div>
   );
 };

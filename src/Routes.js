@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Redirect,
+  useHistory,
+} from "react-router-dom";
 import CreateUser from "./admin/CreateUser";
 import AboutUs from "./Pages/AboutUs";
 import AdminPanel from "./Pages/AdminPanel";
@@ -24,10 +30,11 @@ import ProfileCollections from "./private/ProfileCollections";
 import ProfileSubCollection from "./private/ProfileSubCollection";
 import ManageCollections from "./admin/ManageCollections";
 import UpdateCollection from "./admin/UpdateCollection";
-import { authenticacte } from "./auth";
+import { authenticacte, isAuthenticated } from "./auth";
 const Routes = () => {
   const { userDetails, setUserDetails } = useContext(UserContext);
   // console.log(userDetails.email ? userDetails.email : "no details");
+  const history = useHistory();
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -40,6 +47,7 @@ const Routes = () => {
               admin: true,
             });
             authenticacte({ email: user.email, uid: user.uid, admin: true });
+            <Redirect to="/admin" />;
           } else {
             // console.log("IS NOT ADMIN");
             setUserDetails({
@@ -48,6 +56,7 @@ const Routes = () => {
               admin: false,
             });
             authenticacte({ email: user.email, uid: user.uid, admin: false });
+            <Redirect to="/profile" />;
           }
         });
       } else {

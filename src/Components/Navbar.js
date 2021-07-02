@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import image from "../media/1.png";
 import { UserContext } from "../Context/UserContext";
 import { useContext } from "react";
@@ -102,4 +102,4 @@ const NavBar = () => {
     </Navbar>
   );
 };
-export default NavBar;
+export default withRouter(NavBar);
