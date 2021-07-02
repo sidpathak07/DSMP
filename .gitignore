@@ -17,7 +17,16 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#firebase
+firebase.json
+.firebasesrc
+firestore-debug.logfirestore.indexes.json
+firestore.rules
+storage.rulesui-debug.log
+/src/Config/firebaseConfig.js

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Routes from "./Routes";
+import { UserContext, UserProvider } from "./Context/UserContext";
+import { useContext } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
+//firebase imports
+import { firebaseConfig } from "./Config/firebaseConfig";
+import firebase from "firebase/app";
+firebase.initializeApp(firebaseConfig);
 function App() {
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserProvider>
+      <Routes />
+    </UserProvider>
   );
 }
 
