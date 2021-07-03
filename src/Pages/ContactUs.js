@@ -293,7 +293,6 @@ const ContactUs = () => {
                   Submit Details
                 </button>
               </div>
-              <button onClick={() => console.log(enquiryDetails)}>CHECK</button>
             </form>
             {isLoading && (
               <div className="text-center">
