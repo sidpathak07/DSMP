@@ -15,7 +15,7 @@ const Home = () => {
         <Carousel fade={true} controls={false}>
           <Carousel.Item interval={4000}>
             <img
-              style={{ height: "82vh" }}
+              style={{ height: "89vh" }}
               className="d-block mx-auto w-75"
               src={image1}
               alt="First slide"
@@ -23,7 +23,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={4000}>
             <img
-              style={{ height: "82vh" }}
+              style={{ height: "89vh" }}
               className="d-block mx-auto w-75"
               src={image2}
               alt="Third slide"
@@ -31,7 +31,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={4000}>
             <img
-              style={{ height: "82vh" }}
+              style={{ height: "89vh" }}
               className="d-block mx-auto w-75"
               src={image3}
               alt="Third slide"
@@ -39,7 +39,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={4000}>
             <img
-              style={{ height: "82vh" }}
+              style={{ height: "89vh" }}
               className="d-block mx-auto w-75"
               src={image4}
               alt="Third slide"
@@ -47,7 +47,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item interval={4000}>
             <img
-              style={{ height: "82vh" }}
+              style={{ height: "89vh" }}
               className="d-block mx-auto w-75"
               src={image5}
               alt="Third slide"
