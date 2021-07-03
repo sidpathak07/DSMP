@@ -80,7 +80,6 @@ const Routes = () => {
         <Route path="/contactus" exact component={ContactUs} />
         <Route path="/login" exact component={Login} />
         <Route path="/collection/:id" exact component={SubCollectionCard} />
-        <Route exact path={"*"} component={ErrorPage} />
         <AdminRoute path="/admin" exact component={AdminPanel} />
         <AdminRoute path="/admin/create/user" exact component={CreateUser} />
         <AdminRoute path="/admin/enquiries" exact component={Enquiry} />
@@ -120,6 +119,7 @@ const Routes = () => {
           exact
           component={ConfirmationForm}
         />
+        <Route exact path={"*"} component={ErrorPage} />
       </Switch>
     </BrowserRouter>
   );
