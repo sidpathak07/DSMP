@@ -13,11 +13,15 @@ const AboutUs = () => {
             </div>
             <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h3 class="card-title text-center">Viren Shirgaokar</h3>
+                <p class="card-text text-center">
+                  <h5>Photographer & Video Creator</h5>
+                  <p>
+                    Featured artist over print,radio and Various global
+                    platforms
+                  </p>
+                  <p>Available to capture your weddings Worldwide</p>
+                  <h5>All about dreams and dedication</h5>
                 </p>
               </div>
             </div>

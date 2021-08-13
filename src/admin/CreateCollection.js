@@ -356,14 +356,6 @@ const CreateCollection = () => {
               >
                 Create Collection
               </button>
-              <button
-                className="btn btn-dark "
-                onClick={() =>
-                  console.log(name, date, description, coverImageUrl, urls)
-                }
-              >
-                CHECK
-              </button>
             </div>
           </div>
         </div>

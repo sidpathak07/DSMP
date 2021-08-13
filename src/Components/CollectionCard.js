@@ -10,11 +10,11 @@ const CollectionCard = ({ id, data, index }) => {
 
   return (
     <>
-      <Link to={`/collection/${id}`} className="nav-link">
-        <div
-          class="card mb-3 w-75 h-75 mx-auto rounded-3 bg-light bg-gradient"
-          style={{ boxShadow: "19px 13px 30px 6px rgba(0,0,0,0.34)" }}
-        >
+      <div
+        class="card mb-3 w-75 h-75 text-center mx-auto rounded-3 bg-light bg-gradient"
+        style={{ boxShadow: "19px 13px 30px 6px rgba(0,0,0,0.34)" }}
+      >
+        <Link to={`/collection/${id}`} className="nav-link">
           <img
             src={coverImage}
             class="card-img-top w-50 h-50 mx-auto my-3 rounded-3"
@@ -29,8 +29,8 @@ const CollectionCard = ({ id, data, index }) => {
               <small class="text-muted">{date}</small>
             </p>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </>
   );
 };
