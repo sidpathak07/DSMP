@@ -1,6 +1,7 @@
 import React from "react";
 import Base from "../Components/Base";
 import viren from "../media/viren.jpeg";
+import { FaInstagram } from "react-icons/fa";
 const AboutUs = () => {
   return (
     <div>
@@ -8,7 +9,7 @@ const AboutUs = () => {
         <h3 className="text-center mt-2">ABOUT US</h3>
         <div class="card mb-3 my-3">
           <div class="row g-0 ">
-            <div class="col-md-4">
+            <div class="col-md-4 card-body">
               <img src={viren} class="img-fluid rounded-start" alt="..." />
             </div>
             <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
@@ -22,6 +23,15 @@ const AboutUs = () => {
                   </p>
                   <p>Available to capture your weddings Worldwide</p>
                   <h5>All about dreams and dedication</h5>
+                </p>
+                <p className="text-center">
+                  <h5>Follow Me On</h5>
+                  <a
+                    className="nav-link"
+                    href="https://www.instagram.com/virenshirgaokar/"
+                  >
+                    <FaInstagram size={30} color={"#000000"} />
+                  </a>
                 </p>
               </div>
             </div>
